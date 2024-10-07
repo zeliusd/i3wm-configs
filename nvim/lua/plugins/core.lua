@@ -1,7 +1,19 @@
 return {
+  { "catppuccin/nvim" },
+
   {
-    "folke/tokyonight.nvim",
-    lazy = true,
-    opts = { style = "Storm", transparent = true },
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "catppuccin",
+    },
   },
+  {
+    "folke/noice.nvim",
+    opts = {
+      notify = {
+        enabled = false,
+      },
+    },
+  },
+  { "rcarriga/nvim-notify", enabled = false },
 }
